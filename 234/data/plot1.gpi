@@ -1,0 +1,39 @@
+#!/usr/bin/gnuplot
+
+set key top left box
+set key width 1
+set key height 1
+
+set title  "График №1. Зависимость давления от времени в процессе ухудшения вакуума" \
+           font ",16"
+set ylabel "Давление торр * 10^{-6}" font ",16"
+set xlabel "Время t, с" font ",16"
+
+set grid xtics ytics mytics
+
+set pointsize 1
+
+set term png size 1080,720 font ",12"
+set output "img.png"
+
+FILE1 = "1_1.dat"
+FILE2 = "1_2.dat"
+FILE3 = "2_1.dat"
+FILE4 = "2_2.dat"
+
+my_linear_fit1(x) = a * x + b
+fit my_linear_fit1(x) FILE1 via a,b
+
+#my_linear_fit2(x) = c * x + d
+#fit my_linear_fit2(x) FILE2 via c,d
+
+my_linear_fit3(x) = e * x + f
+fit my_linear_fit3(x) FILE3 via e,f
+
+#my_linear_fit4(x) = h * x + i
+#fit my_linear_fit4(x) FILE4 via h,i
+
+plot FILE1 title "1 опыт ухудшение" pt 7 lt 2, \
+     FILE3 title "2 опыт ухудшение" pt 7 lt 4, \
+     my_linear_fit1(x) title "Аппроксимация ухудшения 1" lt 2, \
+     my_linear_fit3(x) title "Аппроксимация ухудшения 2" lt 4

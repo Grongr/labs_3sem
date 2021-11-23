@@ -1,0 +1,14 @@
+\babel@toc {russian}{}
+\contentsline {section}{\numberline {1}Теория и подготовка к работе.}{2}%
+\contentsline {subsection}{\numberline {1.1}Цель и приборы, используемые в работе.}{2}%
+\contentsline {subsection}{\numberline {1.2}Принцип работы спектроанализатора.}{2}%
+\contentsline {section}{\numberline {2}Задание 1. Исследование спектра периодической последовательности прямоугольных испульсов.}{3}%
+\contentsline {subsection}{\numberline {2.1}Экспериментальная установка.}{3}%
+\contentsline {subsection}{\numberline {2.2}Результаты обработки.}{4}%
+\contentsline {section}{\numberline {3}Задание 2. Исследование спектра периодической последовательности цугов гармонических колебаний.}{9}%
+\contentsline {subsection}{\numberline {3.1}Экспериментальная установка.}{9}%
+\contentsline {subsection}{\numberline {3.2}Результаты обработки.}{9}%
+\contentsline {section}{\numberline {4}Исследование спектра гармонических сигналов модулированных по амплитуде}{10}%
+\contentsline {subsection}{\numberline {4.1}Экспериментальная установка.}{10}%
+\contentsline {subsection}{\numberline {4.2}Обработка результатов.}{11}%
+\contentsline {section}{\numberline {5}Вывод}{13}%

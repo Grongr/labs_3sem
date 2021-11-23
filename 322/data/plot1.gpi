@@ -1,0 +1,44 @@
+#!/usr/bin/gnuplot
+
+set key top right box
+set key width 1
+set key height 1
+
+# set title  "График №1. Зависимость давления от времени в процессе ухудшения вакуума" \
+#           font ",16"
+set ytics nomirror
+set y2tics
+
+set ylabel "r_L(Ом) - зеленый" font ",16"
+set xlabel "x(мм)" font ",16"
+set y2label "L(Гн) - желтый"
+
+#set yrange[6:15]
+set y2range[0.8:1.8]
+set xrange[4:22]
+
+
+#set grid xtics ytics mytics
+
+set pointsize 1
+
+set term png size 1080,720 font ",12"
+set output "img.png"
+
+FILE1 = "data1.dat"
+# FILE2 = "1_2.dat"
+# FILE3 = "2_1.dat"
+# FILE4 = "2_2.dat"
+
+app_fit1(x) = a + b / x
+fit app_fit1(x) FILE1 using 1:2 via a,b
+
+app_fit2(x) = c + d / x
+fit app_fit2(x) FILE1 using 1:3 via c,d
+
+plot FILE1 using 1:2:4:(0.14) with xyerrorbars axes x1y1 title "r_L(Ом)" pt 7 lt 2,\
+     FILE1 using 1:3:4:(0.05) with xyerrorbars axes x1y2 title "L(Гн)" pt 7 lt 4  ,\
+     app_fit1(x) axes x1y1 title "Аппроксимация графика r_L(x)" lt 2, \
+     app_fit2(x) axes x1y2 title "Аппроксимация графика L(x)" lt 4
+#    my_linear_fit1(x) title "Аппроксимация ухудшения 1" lt 2, \
+#    my_linear_fit3(x) title "Аппроксимация ухудшения 2" lt 4

@@ -1,0 +1,12 @@
+\babel@toc {russian}{}
+\contentsline {section}{\numberline {1}Предстоит сделать.}{2}%
+\contentsline {subsection}{\numberline {1.1}Цель работы и оборудование.}{2}%
+\contentsline {section}{\numberline {2}Теоритические сведения.}{2}%
+\contentsline {subsection}{\numberline {2.1}Теория, как она есть.}{2}%
+\contentsline {subsection}{\numberline {2.2}Свободные колебания}{2}%
+\contentsline {subsection}{\numberline {2.3}Свободные колебания. Метод комплексных амплитуд.}{3}%
+\contentsline {subsection}{\numberline {2.4}Свободные колебания. Резонанс.}{3}%
+\contentsline {subsection}{\numberline {2.5}Формулы и зависимости.}{4}%
+\contentsline {subsection}{\numberline {2.6}Экспериментальная установка}{5}%
+\contentsline {section}{\numberline {3}Экспериментальные данные и их обработка.}{6}%
+\contentsline {section}{\numberline {4}Вывод.}{8}%

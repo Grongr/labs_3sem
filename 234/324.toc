@@ -1,0 +1,8 @@
+\babel@toc {russian}{}
+\contentsline {section}{\numberline {1}Экспериментальная установка}{2}%
+\contentsline {section}{\numberline {2}Ход работы}{2}%
+\contentsline {subsection}{\numberline {2.1}Подготовим установку к работе.}{2}%
+\contentsline {subsection}{\numberline {2.2}Измерение периодов}{2}%
+\contentsline {subsection}{\numberline {2.3}Критическое сопротивление и декремент затухания}{3}%
+\contentsline {section}{\numberline {3}Обработка результатов}{3}%
+\contentsline {section}{\numberline {4}Вывод.}{6}%

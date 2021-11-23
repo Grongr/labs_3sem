@@ -1,0 +1,53 @@
+#!/usr/bin/gnuplot
+
+set key bottom right box
+set key width 1
+set key height 1
+
+#set title  "" \
+#           font ",16"
+set ylabel "IмкА" font ",16"
+set xlabel "UВ" font ",16"
+
+set xrange[-35:35]
+
+set grid xtics ytics mytics
+
+set pointsize 1
+
+set term png size 1080,1080 font ",12"
+set output "img.png"
+
+FILE1 = "red.dat"
+FILE2 = "green.dat"
+FILE3 = "blue.dat"
+FILE4 = "2_2.dat"
+
+#my_linear_fit1(x) = a * x + b
+#fit my_linear_fit1(x) FILE1 via a,b
+
+#my_linear_fit2(x) = c * x + d
+#fit my_linear_fit2(x) FILE2 via c,d
+
+#my_linear_fit3(x) = e * x + f
+#fit my_linear_fit3(x) FILE3 via e,f
+
+#my_linear_fit4(x) = h * x + i
+#fit my_linear_fit4(x) FILE4 via h,i
+
+plot FILE1 using 1:2:3 title "I = 110.25мкА" with linespoints lc 1 pt 1 ps 2, \
+     FILE2 using 1:2:3 title "I = 67.35мкА" with linespoints lc 2 pt 1 ps 2, \
+     FILE3 using 1:2:3 title "I = 23.26мкА" with linespoints lc 3 pt 1 ps 2, \
+     [-13:13] 3.28987  + 10.3041*x  with lines lc 1, \
+     [-12:12] 4.2298   + 8.07764*x  with lines lc 3, \
+     [-11:11] 1.89383  + 3.50077*x  with lines lc 2,\
+     [-25:0]  -103.954 + 1.0635*x   with lines lc 1,\
+     [0:25]   116.542  + 0.840094*x with lines lc 1,\
+     [-25:0]  -60.4662 + 0.822038*x with lines lc 3,\
+     [0:25]   74.2443  + 0.655108*x with lines lc 3,\
+     [-25:0]  -21.0516 + 0.365088*x with lines lc 2,\
+     [0:25]   25.4673  + 0.425521*x with lines lc 2
+
+
+#plot FILE1 using 1:2:3 with yerrorbars title "Точки" pt 7 lt 2 , \
+#     FILE1 title "Сглаживание" smooth acsplines with lines lt 2

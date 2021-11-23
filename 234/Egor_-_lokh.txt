@@ -1,0 +1,219 @@
+\documentclass [a4paper,12pt]{article}
+
+\usepackage[left=2cm,right=2cm, top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
+\usepackage [utf8x] {inputenc}
+\usepackage [T2A] {fontenc}
+\usepackage {ascii}
+\usepackage [english, russian] {babel}
+\usepackage {color}
+\usepackage {amsmath, amsfonts, amssymb, amsthm, mathtools}
+\usepackage {float}
+\usepackage{hyperref}
+\begin{document}
+
+\begin{titlepage}
+\begin{center}
+	\large{Московский физико-технический институт}\\
+	\vspace{100px}
+	\LARGE{Лабораторная работа 3.2.4}\\
+	\LARGE{Свободные колебания в электрическом контуре.}\\
+	\vspace{30px}
+	\includegraphics[scale = 0.3]{fakt_logo.png}\\
+\end{center}
+
+\vfill
+\begin{flushright}
+	\text{Коваленко Николай}\\
+	\text{07.09.2021}\\
+	\text{г. Долгопрудный}
+\end{flushright}
+\end{titlepage}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\section{Эксперимент}
+
+\begin{figure}[H]
+    \noindent\centering{
+        \hspace{-0mm}\includegraphics[scale = 0.65]{Lab_station.pdf}
+    }
+    \caption{Схема установки для исследования свободных колебаний.}
+    \label{pic1:ref}
+\end{figure}
+
+Экспериментальный период вычисляем по формуле, приняв $L = 200 \text{мГн}$:
+
+\begin{equation}
+    T = \frac{2\pi}{\omega_0} = 2\pi\sqrt{LC}
+    \label{eq1:ref}
+\end{equation}
+
+\begin{table}[H]
+\caption{\label{tab:canonsummary} Измерение периода.}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+n & $x_0$ ($*10^{-3}$сек) & $x$ ($*10^{-3}$сек) & $T_\text{теор}$ ($* 10^{-2}$сек) & С ($*10^{-6}$Ф)&$T_\text{эксп}$ ($* 10^{-2}$сек)\\
+\hline
+5 & 10 & 1.74 & 0.35 &0.02 & 0.40\\
+\hline
+3 & 9.8 & 2.5 & 0.85 &0.12 & 0.97\\
+\hline
+4 & 9.8 & 4.5 & 1.1 &0.22 & 1.32\\
+\hline
+3 & 9.8 & 4.1 & 1.4 &0.32 & 1.59\\
+\hline
+3 & 9.8 & 4.65 & 1.58 &0.42 & 1.82\\
+\hline
+2 & 9.8 & 3.45 & 1.76 &0.52 & 2.03\\
+\hline
+4 & 9.8 & 7.5 & 1.91 &0.62 & 2.21\\
+\hline
+3 & 9.8 & 6 & 2.04 &0.72 & 2.38\\
+\hline
+3 & 9.8 & 6.6 & 2.24 &0.82 & 2.54\\
+\hline
+3 & 9.8 & 6.8 & 2.31 &0.9 & 2.66\\
+\hline
+3 & 9.8 & 6.7 & 2.27 &0.86 & 2.60\\
+\hline
+\end{tabular}
+\end{center}
+\label{table1:ref}
+\end{table}
+
+\begin{figure}[H]
+    \noindent\centering{
+        \hspace{-0mm}\includegraphics[scale = 1.1]{Plot1.pdf}
+    }
+    \caption{Связь периода колебаний, полученного экспериментально с периодом, полученным теоретически.}
+    \label{pic2:ref}
+\end{figure}
+
+Значение L требует уточнения, тк график имеет $k = 0.87 \pm 0.01$ не равный 1. Из формулы (\ref{eq1:ref}) $L = 150.7 \pm 0.5 \text{мГн}.$
+
+Ескость, при которой собственная частота колебаний составляет 5 кГц:
+
+\begin{equation}
+    C = \frac{1}{4\pi^2{\nu_0}^2L} = 5*10^{-9} \text{Ф}
+    \label{eq2:ref}
+\end{equation}
+
+\begin{equation}
+    R_\text{кр} = 2\frac{L}{C} = 12.65 \text{кОм}
+    \label{eq3:ref}
+\end{equation}
+
+$R_\text{кр}^\text{экс} = 8.6 \text{кОм}$
+
+$R_l = 10.7 \text{Ом}$ при частоте колебаний в 5 кГц. 
+
+\begin{equation}
+    \Theta = \frac{1}{n}ln\left(\frac{U_k}{U_{k+n}}\right)
+    \label{eq4:ref}
+\end{equation}
+
+\begin{table}[H]
+\caption{\label{tab:canonsummary} Измерение логарифмического декремента затухания.}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+$R_\text{конт} \text{(кОм)}$ & $U_1$ (дел) & $U_2$ (дел) & n & $\Theta$\\
+\hline
+0.87 & 3 & 0.2 & 5 & 0.54\\
+\hline
+1.01 & 2.9 & 0.2 & 4 & 0.67\\
+\hline
+1.31 & 2.6 & 0.2 & 3 & 0.85\\
+\hline
+1.71 & 3.2 & 0.4 & 2 & 1.04\\
+\hline
+2.01 & 2 & 0.2 & 2 & 1.15\\
+\hline
+2.31 & 4.2 & 0.2 & 2 & 1.52\\
+\hline
+\end{tabular}
+\end{center}
+\label{table2:ref}
+\end{table}
+
+\begin{figure}[H]
+    \noindent\centering{
+        \hspace{-0mm}\includegraphics[scale = 1.1]{Plot2.pdf}
+    }
+    \caption{}
+    \label{pic2:ref}
+\end{figure}
+
+Из графика получаем $\frac{\Delta Y}{\Delta X} = 2.45$. $ R_\text{крит} = 2\pi\sqrt{\frac{\Delta Y}{\Delta X}} = 9.83 \pm 0.12 \text{кОм} $
+
+\begin{equation}
+    R_\text{крит} = 2\sqrt{\frac{L}{C}} = 10.98 \text{кОм}
+    \label{eq5:ref}
+\end{equation}
+
+\begin{table}[H]
+\caption{\label{tab:canonsummary} Сравнение разных методов измерения критического сопротивления.}
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+& $R_\text{крит}$ кОм\\
+\hline
+Теоритический & 10.98\\
+\hline
+Графический & 9.83 $\pm$ 0.12 \\
+\hline
+Экспериментальный & 8.6\\
+\hline
+\end{tabular}
+\end{center}
+\label{table3:ref}
+\end{table}
+
+Добротность колебаний находим по формуле
+
+\begin{equation}
+    Q = \frac{\pi}{\Theta} = \frac{1}{R}\sqrt{\frac{L}{C}}
+    \label{eq6:ref}
+\end{equation}
+
+\begin{table}[H]
+\caption{\label{tab:canonsummary} Измерение добротности.}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+$\Theta$ & $Q_\text{экс}$ & R (кОм) & L (мГн) & C (пФ) & $Q_\text{теор}$ & $\Delta$ Q\\
+\hline
+0.54 & 5.82 & 0.86 & 150.7 & 5 & 6.38 & 8.77\%\\
+\hline
+1.52 & 2.07 & 2.3 & 150.7 & 5 & 2.39 & 13.3\%\\
+\hline
+\end{tabular}
+\end{center}
+\label{table4:ref}
+\end{table}
+
+\begin{table}[H]
+\caption{\label{tab:canonsummary} Зависимость омического сопротивления от частоты.}
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+& 50 Гц & 1 кГц & 5 кГц\\
+\hline
+$R_l$ (Ом) & 10.4 & 11.2 & 10.7\\
+\hline
+L (мГн) & 145 & 141.35 & 141\\
+\hline
+\end{tabular}
+\end{center}
+\label{table5:ref}
+\end{table}
+
+\section{Вывод}
+
+В процессе работы были исследованы свободные колебания в электрическом контуре. Были найдены добротность колебаний и коэффициент $\Theta$.
+\end{document}
