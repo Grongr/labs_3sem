@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.7)  24 NOV 2021 06:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.7)  30 NOV 2021 22:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**334.tex
-(./334.tex
+**341.tex
+(./341.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -877,15 +877,8 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count291
 \l__pdf_internal_box=\box63
 )
-(./334.aux
-
-LaTeX Warning: Label `tab:canonsummary' multiply defined.
-
-
-LaTeX Warning: Label `table1:ref' multiply defined.
-
-)
-\openout1 = `334.aux'.
+(./341.aux)
+\openout1 = `341.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
 LaTeX Font Info:    ... okay on input line 33.
@@ -975,7 +968,7 @@ Package pdftex.def Info: fakt_logo.png  used on input line 43.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./fakt_logo.png>]
-(./334.toc
+(./341.toc
 LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -992,75 +985,54 @@ LaTeX Font Info:    Trying to load font information for U+wasy on input line 3.
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 ))
 \tf@toc=\write4
-\openout4 = `334.toc'.
+\openout4 = `341.toc'.
 
  [1]
-<pic1.png, id=20, 447.17062pt x 381.67593pt>
+<pic1.png, id=20, 322.95656pt x 195.73125pt>
 File: pic1.png Graphic file (type png)
 <use pic1.png>
-Package pdftex.def Info: pic1.png  used on input line 71.
-(pdftex.def)             Requested size: 357.73698pt x 305.34116pt.
- [2 <./pic1.png (PNG copy)>] [3] [4]
-<gr1.png, id=37, 813.0375pt x 542.025pt>
-File: gr1.png Graphic file (type png)
-<use gr1.png>
-Package pdftex.def Info: gr1.png  used on input line 157.
-(pdftex.def)             Requested size: 487.82626pt x 325.2175pt.
+Package pdftex.def Info: pic1.png  used on input line 75.
+(pdftex.def)             Requested size: 129.18033pt x 78.2911pt.
+ [2 <./pic1.png (PNG copy)>]
+<pic2.png, id=28, 529.98pt x 264.99pt>
+File: pic2.png Graphic file (type png)
+<use pic2.png>
+Package pdftex.def Info: pic2.png  used on input line 121.
+(pdftex.def)             Requested size: 211.98824pt x 105.99411pt.
+ [3] [4 <./pic2.png (PNG copy)>] [5] (./341.aux)
 
-Overfull \hbox (4.1294pt too wide) in paragraph at lines 157--158
- [] 
- []
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-[5 <./gr1.png>] [6]
-<gr2.png, id=46, 813.0375pt x 813.0375pt>
-File: gr2.png Graphic file (type png)
-<use gr2.png>
-Package pdftex.def Info: gr2.png  used on input line 339.
-(pdftex.def)             Requested size: 487.82626pt x 487.82626pt.
+ )
+(\end occurred inside a group at level 1)
 
-Overfull \hbox (4.1294pt too wide) in paragraph at lines 339--340
- [] 
- []
-
-<gr3.png, id=47, 813.0375pt x 542.025pt>
-File: gr3.png Graphic file (type png)
-<use gr3.png>
-Package pdftex.def Info: gr3.png  used on input line 344.
-(pdftex.def)             Requested size: 487.82626pt x 325.2175pt.
-
-Overfull \hbox (4.1294pt too wide) in paragraph at lines 344--345
- [] 
- []
-
-[7 <./gr2.png>] [8 <./gr3.png>] (./334.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+### simple group (level 1) entered at line 159 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 25928 strings out of 481239
- 643293 string characters out of 5920378
- 986033 words of memory out of 5000000
- 40737 multiletter control sequences out of 15000+600000
- 545804 words of font info for 51 fonts, out of 8000000 for 9000
+ 25900 strings out of 481239
+ 643017 string characters out of 5920378
+ 974975 words of memory out of 5000000
+ 40715 multiletter control sequences out of 15000+600000
+ 542453 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,9n,98p,1227b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx
-1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share
-/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/p
-ublic/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1
-728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm2488.pfb></usr/share/
-texmf/fonts/type1/public/cm-super/sfti1440.pfb>
-Output written on 334.pdf (9 pages, 261422 bytes).
+ 68i,7n,98p,1527b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts/type1/public/cm-su
+per/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></u
+sr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts
+/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-sup
+er/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm2488.pfb></us
+r/share/texmf/fonts/type1/public/cm-super/sfti1440.pfb>
+Output written on 341.pdf (6 pages, 227194 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
+ 88 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 38 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 

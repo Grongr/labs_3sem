@@ -3,4 +3,7 @@
 \contentsline {subsection}{\numberline {1.1}Цель работы и используемые приборы.}{2}%
 \contentsline {subsection}{\numberline {1.2}Экспериментальная установка.}{2}%
 \contentsline {section}{\numberline {2}Ход работы.}{3}%
-\contentsline {section}{\numberline {3}Обработка результатов.}{4}%
+\contentsline {section}{\numberline {3}Обработка результатов.}{5}%
+\contentsline {subsection}{\numberline {3.1}Градуировка электромагнита.}{5}%
+\contentsline {subsection}{\numberline {3.2}Измерение ЭДС Холла.}{6}%
+\contentsline {section}{\numberline {4}Вывод.}{8}%

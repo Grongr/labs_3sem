@@ -1,0 +1,32 @@
+#!/usr/bin/gnuplot
+
+set key top left box
+set key width 1
+set key height 1
+
+# set title  "График №1. Зависимость давления от времени в процессе ухудшения вакуума" \
+#           font ",16"
+set ytics nomirror
+
+set ylabel "k, В/Тл * 10^{-4}" font ",16"
+set xlabel "I, A" font ",16"
+
+set yrange[0:7]
+set xrange[0.1:1.2]
+
+
+set grid xtics ytics mytics
+
+set pointsize 2
+
+set term png size 1080,720 font ",12"
+set output "img.png"
+
+FILE1 = "KD.dat"
+
+app1(x) = (-1.03205e-005 + 0.000554833*x) * 10000
+
+plot FILE1 using 1:($2 * 10000):($3 * 10000) with yerrorbars            \
+     notitle pt 7 lt 1,                                                 \
+     [0.2:1.1] app1(x) title "y = 5.548 * 10^{-4}" lt 1
+     
